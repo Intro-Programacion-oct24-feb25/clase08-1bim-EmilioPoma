@@ -37,7 +37,7 @@ public class Ejemplo05 {
 
         do {
             
-            resultado *= numero;
+            resultado = resultado * numero;
             contador = contador + 1;
         } while (contador <= potencia);
 
