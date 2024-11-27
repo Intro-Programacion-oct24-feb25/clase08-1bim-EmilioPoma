@@ -24,7 +24,7 @@ public class Ejemplo09 {
         entrada.useLocale(Locale.US);
         
         String cadenaFinal;
-        int nota;
+        int nota = 0;
         int salida;
         String nombre; // *
         double promedio;
@@ -35,8 +35,14 @@ public class Ejemplo09 {
         cadenaFinal = "Listado de Notas\n";
         
         do {
-            
-            
+            System.out.println("Ingrese el nombre del estudiante");
+            nombre = entrada.nextLine();
+            System.out.println("Ingrese la nota del estudiante");
+            nota = entrada.nextInt();
+            cadenaFinal = String.format("%sCalificacion %d del estudiante %s\n", 
+                    cadenaFinal, 
+                    nota, 
+                    nombre );
             // agrego valor al acumulador
             suma = suma + nota;
             // agrego una unidad al contador para luego sacar el promedio
